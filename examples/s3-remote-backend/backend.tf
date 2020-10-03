@@ -6,10 +6,10 @@
 terraform {
   backend "s3" {
     bucket = "aria-stark.remote-backend.terraform"
-    key = "examples/s3-remote-backend/terraform.tfstate"
+    key    = "examples/s3-remote-backend/terraform.tfstate"
     region = "us-east-1"
 
     dynamodb_table = "aria-stark-remote-backend-terraform-dynamodb-locks-table"
-    encrypt = true
+    encrypt        = true
   }
 }
