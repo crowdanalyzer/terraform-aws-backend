@@ -1,7 +1,7 @@
 # ------------------------------------------------------------------------------------------------------------------
-# DEPLOY AN S3 BUCKET THAT CAN BE USED AS A REMOTE BACKEND FOR TERRAFORM WITH VERSIONING AND ENCRYPTION ENABLED
+# DEPLOY AN S3 BUCKET THAT CAN BE USED AS A REMOTE BACKEND FOR TERRAFORM
 # This example shows how to use the backend-s3 module to deploy
-# an s3 bucket that can be used as a remote backend for terraform state with versioning and encryption enabled.
+# an s3 bucket that can be used as a remote backend for terraform state.
 # It also deploys a dynamodb table to be used for locking.
 # ------------------------------------------------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ provider "aws" {
 # DEPLOY ELASTICSEARCH CLUSTER BACKUP LAMBDA FUNCTION
 # ------------------------------------------------------------------------------------------------------------------
 
-module "s3_backend_with_versioning_encryption" {
+module "s3_backend" {
   source = "../../modules/backend-s3"
 
   bucket         = var.bucket
