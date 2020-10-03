@@ -1,6 +1,6 @@
-# S3 Backend Example
+# S3 Backend with Versioning & Encryption Example
 
-This folder contains a Terraform example for deploying an *S3* bucket that can be used as a *remote backend* for Terraform. It also deploys a *DynamoDB* table to be used for locking.
+This folder contains a Terraform example for deploying an *S3* bucket that can be used as a *remote backend* for Terraform with *versioning* and *encryption* **enabled**. It also deploys a *DynamoDB* table to be used for locking.
 
 The end result of this example is an S3 bucket and a dynamodb table.
 
