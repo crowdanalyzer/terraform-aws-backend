@@ -49,9 +49,9 @@ resource "aws_s3_bucket" "s3_bucket" {
 # ------------------------------------------------------------------------------------------------------------------
 
 resource "aws_dynamodb_table" "dynamodb_table" {
-  name = var.dynamodb_table
+  name         = var.dynamodb_table
   billing_mode = "PAY_PER_REQUEST"
-  hash_key = local.lockKey
+  hash_key     = local.lockKey
 
   attribute {
     name = local.lockKey

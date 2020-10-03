@@ -29,6 +29,6 @@ provider "aws" {
 module "s3_backend_with_versioning_encryption" {
   source = "../../modules/backend-s3"
 
-  bucket                  = var.bucket
-  dynamodb_table  = var.dynamodb_table
+  bucket         = var.bucket
+  dynamodb_table = var.dynamodb_table
 }
