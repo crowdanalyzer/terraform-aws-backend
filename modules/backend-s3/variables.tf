@@ -18,18 +18,6 @@ variable "dynamodb_table" {
 # These parameters have reasonable defaults.
 # ------------------------------------------------------------------------------------------------------------------
 
-variable "enable_versioning" {
-  description = "Whether the S3 bucket should have versioning enabled or not."
-  type        = bool
-  default     = true
-}
-
-variable "enable_encryption" {
-  description = "Whether the S3 bucket should have encryption enabled or not."
-  type        = bool
-  default     = true
-}
-
 variable "tags" {
   description = "The tags that should be associated with the resources created by this module."
   type        = map(string)

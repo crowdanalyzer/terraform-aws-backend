@@ -21,12 +21,10 @@ resource "aws_s3_bucket" "s3_bucket" {
   acl    = "private"
 
   versioning {
-    enabled = var.enable_versioning
+    enabled = true
   }
 
   server_side_encryption_configuration {
-    count = var.enable_encryption ? 1 : 0
-
     rule {
       apply_server_side_encryption_by_default {
         sse_algorithm = "AES256"
