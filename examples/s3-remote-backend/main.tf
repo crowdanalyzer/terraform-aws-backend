@@ -26,12 +26,12 @@ provider "aws" {
 # ------------------------------------------------------------------------------------------------------------------
 
 resource "aws_s3_bucket" "s3_bucket" {
-  bucket = var.bucket_name
+  bucket = var.bucket
   acl    = "private"
 
   tags = merge(
     {
-      Name = var.bucket_name
+      Name = var.bucket
       Role = "Remote Backend for Terraform Demo"
     },
     var.tags
