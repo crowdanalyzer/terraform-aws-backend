@@ -11,7 +11,7 @@
 # These parameters have reasonable defaults.
 # ------------------------------------------------------------------------------------------------------------------
 
-variable "bucket_name" {
+variable "bucket" {
   description = "The name of the s3 bucket that is used for this module."
   type        = string
   default     = "sansa-stark.remote-backends.terraform.example"
